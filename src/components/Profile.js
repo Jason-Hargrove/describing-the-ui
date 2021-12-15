@@ -8,7 +8,11 @@ function Profile() {
 }
 
 function Profile2() {
-    return <img src="https://i.imgur.com/lICfvbD.jpg" alt="Aklilu Lemma" />
+    return <img src="https://i.imgur.com/lICfvbD.jpg" alt="Aklilu Lemma" />;
+}
+
+function Profile3() {
+    return <img src="https://i.imgur.com/jA8hHMpm.jpg" alt="Katsuko Saruhashi" />;
 }
 
 export default function Gallery() {
@@ -18,6 +22,7 @@ export default function Gallery() {
             <Profile />
             <Profile />
             <Profile2 />
+            <Profile3 />
         </section>
     );
 }
