@@ -24,6 +24,22 @@ function Profile4() {
     );
 }
 
+function Jason() {
+    return (
+        <>
+            <img
+                style={{width: "10em"}}
+                src="https://images.squarespace-cdn.com/content/v1/57902faa59cc68a958c59c03/1470085548577-TLE1GYXRPL9ISJ1O3RFS/Jason+Hargrove?format=2500w"
+                alt="Jason Hargrove"
+            />
+            <article style={{textAlign: "right"}}>
+                <a href="http://www.jasonhargroveart.com/">Jason Hargrove Gallery</a>
+            </article>
+
+        </>
+    );
+}
+
 export default function Gallery() {
     return (
         <section>
@@ -33,6 +49,7 @@ export default function Gallery() {
             <Profile2 />
             <Profile3 />
             <Profile4 />
+            <Jason />
         </section>
     );
 }
