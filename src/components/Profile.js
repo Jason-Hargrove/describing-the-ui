@@ -15,6 +15,15 @@ function Profile3() {
     return <img src="https://i.imgur.com/jA8hHMpm.jpg" alt="Katsuko Saruhashi" />;
 }
 
+function Profile4() {
+    return (
+        <img
+            src="https://i.imgur.com/QIrZWGIs.jpg"
+            alt="Alan L. Hart"
+        />
+    );
+}
+
 export default function Gallery() {
     return (
         <section>
@@ -23,6 +32,7 @@ export default function Gallery() {
             <Profile />
             <Profile2 />
             <Profile3 />
+            <Profile4 />
         </section>
     );
 }
