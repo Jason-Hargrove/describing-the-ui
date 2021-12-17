@@ -24,7 +24,7 @@ function Profile4() {
     );
 }
 
-function Jason() {
+export function Jason() {
     return (
         <>
             <img
@@ -49,7 +49,6 @@ export default function Gallery() {
             <Profile2 />
             <Profile3 />
             <Profile4 />
-            <Jason />
         </section>
     );
 }
