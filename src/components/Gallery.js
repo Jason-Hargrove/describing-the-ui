@@ -1,11 +1,5 @@
-function Profile() {
-    return (
-        <img
-            src="https://i.imgur.com/MK3eW3Am.jpg"
-            alt="Katherine Johnson"
-        />
-    );
-}
+import Profile from "./Profile.js"
+
 
 function Profile2() {
     return <img src="https://i.imgur.com/lICfvbD.jpg" alt="Aklilu Lemma" />;
