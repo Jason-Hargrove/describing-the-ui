@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.avatar {
+  margin: 5em;
+  border: 5px solid red;
+  width: 10em;
+  border-radius: 10% 30% 50% 70%
+}

@@ -17,7 +17,7 @@ function App() {
   );
 }
 
-// Left off at Writing Markup with JSX
-// https://beta.reactjs.org/learn/writing-markup-with-jsx
+// Left off at JavaScript in JSX with Curly Braces
+// https://beta.reactjs.org/learn/javascript-in-jsx-with-curly-bracesx
 
 export default App;

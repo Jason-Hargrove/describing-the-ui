@@ -1,4 +1,5 @@
 import Profile from "./Profile.js"
+import Avatar from "./Avatar";
 
 
 function Profile2() {
@@ -43,6 +44,7 @@ export default function Gallery() {
             <Profile2 />
             <Profile3 />
             <Profile4 />
+            <Avatar />
         </section>
     );
 }
