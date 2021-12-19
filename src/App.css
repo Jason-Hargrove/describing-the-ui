@@ -43,3 +43,15 @@
   width: 10em;
   border-radius: 10% 30% 50% 70%
 }
+
+.avatar2 {
+  margin: 5em;
+  border: 5px solid blue;
+  border-radius: 10% 30% 50% 70%
+}
+
+.avatar3 {
+  margin: 5em;
+  border: 5px solid purple;
+  border-radius: 10% 30% 50% 70%
+}
