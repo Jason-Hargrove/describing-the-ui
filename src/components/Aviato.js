@@ -22,6 +22,20 @@ export default function Profile3() {
                     imageId: 'YfeOqp2'
                 }}
             />
+            <Avatar3
+                size={125}
+                person={{
+                    name: 'Aklilu Lemma',
+                    imageId: 'OKS67lh'
+                }}
+            />
+            <Avatar3
+                size={150}
+                person={{
+                    name: 'Lin Lanying',
+                    imageId: '1bX5QH6'
+                }}
+            />
         </div>
     );
 }
