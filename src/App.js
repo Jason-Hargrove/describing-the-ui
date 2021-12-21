@@ -5,7 +5,7 @@ import { Jason } from "./components/Gallery";
 import ToDoList from "./components/ToDoList";
 import Bio from "./components/Bio";
 import Avatar2 from "./components/Avatar2";
-import Profile3 from "./components/Aviato";
+import Profile3 from "./components/Profile3";
 
 function App() {
   return (
