@@ -3,7 +3,6 @@ import { getImageUrl } from './utils2.js'
 function Avatar ({ person, size }) {
     let newSize = '';
     (size < 90) ? newSize = 's' : newSize = 'b';
-    console.log(newSize);
 
     return (
         <img
@@ -18,12 +17,21 @@ function Avatar ({ person, size }) {
 
 export default function AdjImgSize() {
     return (
-        <Avatar
-            size={91}
-            person={{
-                name: 'Gregorio Y. Zara',
-                imageId: '7vQD0fP'
-            }}
-        />
+        <>
+            <Avatar
+                size={91}
+                person={{
+                    name: 'Gregorio Y. Zara',
+                    imageId: '7vQD0fP'
+                }}
+            />
+            <Avatar
+                size={45}
+                person={{
+                    name: 'Gregorio Y. Zara',
+                    imageId: '7vQD0fP'
+                }}
+            />
+        </>
     );
 }

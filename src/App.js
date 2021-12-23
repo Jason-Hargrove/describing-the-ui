@@ -8,6 +8,7 @@ import Avatar2 from "./components/Avatar2";
 import Profile3 from "./components/Profile3";
 import Profile4 from "./components/GalleryExtract";
 import AdjImgSize from "./components/AdjImgSize";
+import PassChildren from "./components/PassChildren";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Profile3 />
       <Profile4 />
       <AdjImgSize />
+      <PassChildren />
     </div>
   );
 }
