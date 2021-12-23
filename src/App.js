@@ -7,6 +7,7 @@ import Bio from "./components/Bio";
 import Avatar2 from "./components/Avatar2";
 import Profile3 from "./components/Profile3";
 import Profile4 from "./components/GalleryExtract";
+import AdjImgSize from "./components/AdjImgSize";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Avatar2 />
       <Profile3 />
       <Profile4 />
+      <AdjImgSize />
     </div>
   );
 }
