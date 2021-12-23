@@ -1,6 +1,14 @@
 import { getImageUrl } from './Utils.js';
 
-function Extract({ title, imageId, alt, width, height, profession, awards, discovered }) {
+function Extract({
+   title,
+   imageId,
+   alt,
+   imageSize= 70,
+   profession,
+   awards,
+   discovered
+}) {
     return (
         <>
             <section className="profile">
@@ -9,8 +17,8 @@ function Extract({ title, imageId, alt, width, height, profession, awards, disco
                     className="avatar"
                     src={getImageUrl({imageId})}
                     alt={alt}
-                    width={width}
-                    height={height}
+                    width={imageSize}
+                    height={imageSize}
                 />
                 <ul>
                     <li>
@@ -18,8 +26,11 @@ function Extract({ title, imageId, alt, width, height, profession, awards, disco
                         {profession}
                     </li>
                     <li>
-                        <b>Awards: </b>
-                        {awards}
+                        <b>Awards: {awards.length}</b>
+                        {awards
+                            .map(item => <div>{item}</div>)
+                        }
+                        {awards.join(', ')}
                     </li>
                     <li>
                         <b>Discoveries: </b>
@@ -39,20 +50,24 @@ export default function Gallery() {
                 title={'Extracted 1'}
                 imageId={'szV5sdG'}
                 alt={"Maria Skłodowska-Curie Extracted-1"}
-                width={70}
-                height={70}
                 profession={'physicist and chemist'}
-                awards={'(Nobel Prize in Physics, Nobel Prize in Chemistry, Davy Medal, Matteucci Medal)'}
+                awards={[
+                    'Nobel Prize in Physics',
+                    'Nobel Prize in Chemistry',
+                    'Davy Medal',
+                    'Matteucci Medal'
+                ]}
                 discovered={'polonium (element)'}
             />
             <Extract
                 title={'Extracted 2'}
                 imageId={'YfeOqp2'}
                 alt={"Katsuko Saruhashie Extracted-2"}
-                width={70}
-                height={70}
                 profession={'geochemist'}
-                awards={'(Miyake Prize for geochemistry, Tanaka Prize)'}
+                awards={[
+                    'Miyake Prize for geochemistry',
+                    'Tanaka Prize'
+                ]}
                 discovered={'a method for measuring carbon dioxide in seawater'}
             />
         </div>
