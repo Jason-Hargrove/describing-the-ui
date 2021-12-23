@@ -6,6 +6,7 @@ import ToDoList from "./components/ToDoList";
 import Bio from "./components/Bio";
 import Avatar2 from "./components/Avatar2";
 import Profile3 from "./components/Profile3";
+import Profile4 from "./components/GalleryExtract";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Bio />
       <Avatar2 />
       <Profile3 />
+      <Profile4 />
     </div>
   );
 }

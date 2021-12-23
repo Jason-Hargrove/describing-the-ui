@@ -8,7 +8,7 @@ function Card({children}) {
     )
 }
 
-export default function Profile3() {
+export default function Profile4() {
     return (
         <div>
             <Card>
