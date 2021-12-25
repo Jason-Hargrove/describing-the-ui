@@ -9,10 +9,12 @@ import Profile3 from "./components/Profile3";
 import Profile4 from "./components/GalleryExtract";
 import AdjImgSize from "./components/AdjImgSize";
 import PassChildren from "./components/PassChildren";
+import PackingList from "./components/PackingList";
 
 function App() {
   return (
     <div className="App">
+      <PackingList />
       <Profile />
       <Gallery />
       <Jason />
