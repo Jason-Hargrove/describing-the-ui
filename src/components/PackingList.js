@@ -1,5 +1,8 @@
 function Item({ name, isPacked }) {
-    return <li className="item">{name}</li>
+    if (isPacked) {
+        return null;
+    }
+    return <li className="item">{name}</li>;
 }
 
 export default function PackingList() {

@@ -57,3 +57,8 @@ section.packing-list {
   border: 5px solid gold;
   text-align: left;
 }
+
+section.packing-list > h1 {
+  color: indianred;
+  margin-left: 1em;
+}
