@@ -12,10 +12,12 @@ import PassChildren from "./components/PassChildren";
 import PackingList from "./components/PackingList";
 import PackingList2 from "./components/PackingList2";
 import DrinkList from "./components/DrinkList";
+import RefactoredDrinkList from "./components/RefactoredDrinkList";
 
 function App() {
   return (
     <div className="App">
+      <RefactoredDrinkList />
       <DrinkList />
       <PackingList2 />
       <PackingList />

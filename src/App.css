@@ -70,3 +70,10 @@ div.drink-list {
   margin-bottom: 2em;
   padding-left: 2em;
 }
+
+div.refactored-drink-list {
+  border: 5px solid orangered;
+  text-align: left;
+  margin-bottom: 2em;
+  padding-left: 2em;
+}
