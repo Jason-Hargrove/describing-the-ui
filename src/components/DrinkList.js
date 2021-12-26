@@ -20,7 +20,7 @@ function Drink({ name }) {
         })
     }
     if (name === 'coffee') {
-        tea.map(item => {
+        coffee.map(item => {
             data.push(item)
         })
     }
