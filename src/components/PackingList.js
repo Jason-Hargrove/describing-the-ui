@@ -1,3 +1,5 @@
+// Show an icon fro incomplete items with ? :.
+
 function Item({ name, isPacked }) {
     return (
         <li className="item">

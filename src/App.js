@@ -10,10 +10,12 @@ import Profile4 from "./components/GalleryExtract";
 import AdjImgSize from "./components/AdjImgSize";
 import PassChildren from "./components/PassChildren";
 import PackingList from "./components/PackingList";
+import PackingList2 from "./components/PackingList2";
 
 function App() {
   return (
     <div className="App">
+      <PackingList2 />
       <PackingList />
       <Profile />
       <Gallery />
