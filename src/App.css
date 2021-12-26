@@ -63,3 +63,10 @@ section.packing-list > h1 {
   color: indianred;
   margin-left: 1em;
 }
+
+div.drink-list {
+  border: 5px solid blue;
+  text-align: left;
+  margin-bottom: 2em;
+  padding-left: 2em;
+}

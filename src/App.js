@@ -11,10 +11,12 @@ import AdjImgSize from "./components/AdjImgSize";
 import PassChildren from "./components/PassChildren";
 import PackingList from "./components/PackingList";
 import PackingList2 from "./components/PackingList2";
+import DrinkList from "./components/DrinkList";
 
 function App() {
   return (
     <div className="App">
+      <DrinkList />
       <PackingList2 />
       <PackingList />
       <Profile />
