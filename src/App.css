@@ -77,3 +77,10 @@ div.refactored-drink-list {
   margin-bottom: 2em;
   padding-left: 2em;
 }
+
+ul.people-list {
+  border: 5px solid green;
+  text-align: left;
+  margin-bottom: 2em;
+  padding: 2em;
+}
