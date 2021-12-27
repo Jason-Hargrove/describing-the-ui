@@ -13,10 +13,12 @@ import PackingList from "./components/PackingList";
 import PackingList2 from "./components/PackingList2";
 import DrinkList from "./components/DrinkList";
 import RefactoredDrinkList from "./components/RefactoredDrinkList";
+import List from "./components/List";
 
 function App() {
   return (
     <div className="App">
+      <List />
       <RefactoredDrinkList />
       <DrinkList />
       <PackingList2 />
