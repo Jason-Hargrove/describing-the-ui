@@ -1,31 +1,7 @@
-
-const people = [
-    'Creola Katherine Johnson: mathematician',
-    'Mario José Molina-Pasquel Henríquez: chemist',
-    'Mohammad Abdus Salam: physicist',
-    'Percy Lavon Julian: chemist',
-    'Subrahmanyan Chandrasekhar: astrophysicist'
-];
-
-const UpdatedPeople = [{
-        id: 0,
-        name: "Creola Katherine Johnson",
-        profession: "mathematician"
-    }, {
-        id: 1,
-        name: "Mario José Molina-Pasquel Henríquez",
-        profession: "chemist"
-    }, {
-        id: 2,
-        name: "Mohammad Abdus Salam",
-        profession: "physicist"
-    }, {
-        name: "Percy Lavon Julian",
-        profession: "chemist"
-    }, {
-        name: "Subrahmanyan Chandrasekhar",
-        profession: "astrophysicist"
-    }];
+import { getImageUrl } from './utils3.js';
+import { people } from '../data/data';
+import { UpdatedPeople } from '../data/data2';
+import { people3 } from '../data/data3';
 
 export default function List() {
     const listItems = people.map(person =>
@@ -35,11 +11,26 @@ export default function List() {
     const chemists = UpdatedPeople.filter(person =>
         person.profession === "chemist"
     );
-
     const filtItems = chemists.map(person =>
-        <li>
+        <li key={person.id}>
             <b>{person.name}</b>
+        </li>
+    );
 
+    const chemists2 = people3.filter(person =>
+        person.profession === 'chemist'
+    );
+    const mappedItems = chemists2.map(person =>
+        <li key={person.id}>
+            <img
+                src={getImageUrl(person)}
+                alt={person.name}
+            />
+            <p>
+                <b>{person.name}</b>
+                {' ' + person.profession + ' '}
+                known for {person.accomplishment}
+            </p>
         </li>
     );
 
@@ -51,6 +42,9 @@ export default function List() {
             <br />
             <ul className="people-list">
                 {filtItems}
+            </ul>
+            <ul className="people-list">
+                {mappedItems}
             </ul>
         </>
     );
