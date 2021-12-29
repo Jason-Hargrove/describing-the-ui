@@ -92,10 +92,18 @@ article.split-list {
   padding: 2em;
 }
 
+article.split-list > ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 2em;
+}
+
 article.split-list > ul > li {
   list-style-type: none;
 }
 
 article.split-list > ul > li > img {
   border-radius: 50%;
+  float: left;
 }
