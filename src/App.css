@@ -84,3 +84,18 @@ ul.people-list {
   margin-bottom: 2em;
   padding: 2em;
 }
+
+article.split-list {
+  border: 5px solid gold;
+  text-align: left;
+  margin-bottom: 2em;
+  padding: 2em;
+}
+
+article.split-list > ul > li {
+  list-style-type: none;
+}
+
+article.split-list > ul > li > img {
+  border-radius: 50%;
+}

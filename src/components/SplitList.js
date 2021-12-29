@@ -1,8 +1,8 @@
 import { people3 } from "../data/data3";
 import { getImageUrl } from "./utils3";
 
-export default function List() {
-    const listItems = people.map(person =>
+export default function SplitList() {
+    const listItems = people3.map(person =>
         <li key={person.id}>
             <img
                 src={getImageUrl(person)}
@@ -16,7 +16,7 @@ export default function List() {
         </li>
     );
     return (
-        <article>
+        <article className="split-list">
             <h1>Scientists</h1>
             <ul>{listItems}</ul>
         </article>

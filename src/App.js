@@ -15,26 +15,28 @@ import DrinkList from "./components/DrinkList";
 import RefactoredDrinkList from "./components/RefactoredDrinkList";
 import List from "./components/List";
 import List2 from "./components/List2";
+import SplitList from "./components/SplitList";
 
 function App() {
   return (
     <div className="App">
-      <List2 />
-      <List />
-      <RefactoredDrinkList />
-      <DrinkList />
-      <PackingList2 />
-      <PackingList />
-      <Profile />
-      <Gallery />
-      <Jason />
-      <ToDoList />
-      <Bio />
-      <Avatar2 />
-      <Profile3 />
-      <Profile4 />
-      <AdjImgSize />
-      <PassChildren />
+        <SplitList />
+        <List2 />
+        <List />
+        <RefactoredDrinkList />
+        <DrinkList />
+        <PackingList2 />
+        <PackingList />
+        <Profile />
+        <Gallery />
+        <Jason />
+        <ToDoList />
+        <Bio />
+        <Avatar2 />
+        <Profile3 />
+        <Profile4 />
+        <AdjImgSize />
+        <PassChildren />
     </div>
   );
 }
