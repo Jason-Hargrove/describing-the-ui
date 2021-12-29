@@ -16,10 +16,12 @@ import RefactoredDrinkList from "./components/RefactoredDrinkList";
 import List from "./components/List";
 import List2 from "./components/List2";
 import SplitList from "./components/SplitList";
+import SplitListFunc from "./components/SplitListFunc";
 
 function App() {
   return (
     <div className="App">
+        <SplitListFunc />
         <SplitList />
         <List2 />
         <List />

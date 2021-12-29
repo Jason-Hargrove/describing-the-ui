@@ -1,8 +1,8 @@
 import { people3 } from "../data/data3";
 import { getImageUrl } from "./utils3";
 
-// ========== Using filter() Twice ==========
-export default function SplitList() {
+// ========== Extract Repetitive Parts Into a <ListSection> Component ==========
+export default function SplitListFunc() {
 
 // ===== Chemists =====
     const chemists = people3.filter(person =>
@@ -44,7 +44,7 @@ export default function SplitList() {
 
     return (
         <article className="split-list">
-            <h1>Scientists</h1>
+            <h1>Scientists - <span style={{color: "blue"}}>SplitListFunc</span></h1>
             <h2>Chemists</h2>
             <ul>{listChemists}</ul>
             <h2>Everyone Else</h2>
