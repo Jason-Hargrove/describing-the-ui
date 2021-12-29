@@ -43,7 +43,7 @@ function App() {
   );
 }
 
-// Left off at JavaScript in JSX with Curly Braces
-// https://beta.reactjs.org/learn/javascript-in-jsx-with-curly-bracesx
+// Left off at Describing the UI, Rendering Lists, Try out some challenges, Splitting a list in two, second example (function).
+// https://beta.reactjs.org/learn/rendering-lists
 
 export default App;
