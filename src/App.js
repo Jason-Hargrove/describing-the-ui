@@ -18,10 +18,12 @@ import List2 from "./components/List2";
 import SplitList from "./components/SplitList";
 import SplitListFunc from "./components/SplitListFunc";
 import SplitList3 from "./components/SplitList3";
+import RecipeList from "./components/RecipeList";
 
 function App() {
   return (
     <div className="App">
+        <RecipeList />
         <SplitList3 />
         <SplitListFunc />
         <SplitList />
