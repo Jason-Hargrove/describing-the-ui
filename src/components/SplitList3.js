@@ -1,8 +1,17 @@
 import { people3 } from "../data/data3";
 import { getImageUrl } from "./utils3";
 
-// ========== Extract Repetitive Parts Into a <ListSection> Component ==========
+let physicists = [];
+let everyoneElse = [];
+people3.forEach(person => {
+    if (person.profession === 'physicist') {
+        physicists.push(person);
+    } else {
+        everyoneElse.push(person);
+    }
+});
 
+// ========== Extract Repetitive Parts Into a <ListSection> Component ==========
 function ListSection({ title, people }) {
     return (
         <>
@@ -27,21 +36,12 @@ function ListSection({ title, people }) {
 }
 
 export default function SplitList3() {
-
-// ===== Chemists =====
-    const chemists = people3.filter(person =>
-        person.profession === "chemist"
-    );
-// ===== Everyone Else =====
-    const everyoneElse =  people3.filter(person =>
-        person.profession !== "chemist"
-    );
     return (
         <article className="split-list">
             <h1>Scientists - <span style={{color: "red"}}>SplitList3 - clean</span></h1>
             <ListSection
-                title="Chemists"
-                people={chemists}
+                title="Physicists"
+                people={physicists}
             />
             <ListSection
                 title="Everyone Else"
