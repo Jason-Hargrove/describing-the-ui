@@ -107,3 +107,11 @@ article.split-list > ul > li > img {
   border-radius: 50%;
   float: left;
 }
+
+
+div.recipe-list {
+  border: 5px solid green;
+  text-align: left;
+  margin-bottom: 2em;
+  padding: 1em;
+}
